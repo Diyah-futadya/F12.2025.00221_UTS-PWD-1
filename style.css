@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f9;
+    color: #333333;
+    line-height: 1.7;
+}
+.navbar {
+    background-color: #f97ef1;
+    color: white;
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #dbeafe;
+    text-decoration: underline;
+}
+.profile-header {
+    background-color: white;
+    padding: 45px 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.profile-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.profile-photo {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e5effa;
+}
+
+.profile-info h1 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.profile-info h2 {
+    color: #f480f6;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.profile-info p {
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.profile-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #f480f6;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #f480f6;
+}
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+    color: #17365d;
+    font-size: 21px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f480f6;
+}
+
+.card p {
+    color: #555555;
+    font-size: 15px;
+}
+.item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #0a66c2;
+}
+
+.item h3 {
+    color: #17365d;
+    font-size: 17px;
+}
+
+.item p {
+    margin-top: 3px;
+}
+
+.subheading {
+    color: #17365d;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #0a66c2 !important;
+    font-weight: bold;
+}
+
+.list {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.list li {
+    margin-bottom: 8px;
+    color: #555555;
+    font-size: 15px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background-color: #e8f2fc;
+    color: #0a66c2;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #c9def3;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background-color: #0a66c2;
+    color: white;
+}
+.sidebar-item {
+    margin-bottom: 18px;
+}
+
+.sidebar-item h3 {
+    color: #17365d;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.sidebar-item a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #f97ef1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 24px;
+    }
+
+    .profile-contact {
+        justify-content: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-info h1 {
+        font-size: 21px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .skills span {
+        font-size: 12px;
+    }
+}
+.theme-button {
+    background-color: white;
+    color: #0a66c2;
+    border: 2px solid white;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-button:hover {
+    background-color: #dbeafe;
+    transform: scale(1.05);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .profile-header {
+    background-color: #1e1e1e;
+    border-bottom-color: #333333;
+}
+
+body.dark-mode .profile-info h1,
+body.dark-mode .profile-info h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .profile-info p {
+    color: #dddddd;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: #333333;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .card h2,
+body.dark-mode .item h3,
+body.dark-mode .subheading,
+body.dark-mode .sidebar-item h3 {
+    color: #60a5fa;
+}
+
+body.dark-mode .card p,
+body.dark-mode .list li {
+    color: #dddddd;
+}
+
+body.dark-mode .sidebar-item a {
+    color: #60a5fa;
+}
+
+body.dark-mode .skills span {
+    background-color: #263b52;
+    color: #93c5fd;
+    border-color: #375575;
+}
+
+body.dark-mode .skills span:hover {
+    background-color: #0a66c2;
+    color: white;
+}
+
+body.dark-mode .footer {
+    background-color: #080808;
+}
+
+body.dark-mode .theme-button {
+    background-color: #263b52;
+    color: white;
+    border-color: #60a5fa;
+}
+
+body.dark-mode .theme-button:hover {
+    background-color: #375575;
+}
+
+body,
+.profile-header,
+.card,
+.footer {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
